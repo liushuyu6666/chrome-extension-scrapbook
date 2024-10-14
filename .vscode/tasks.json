@@ -1,0 +1,45 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "install",
+      "type": "shell",
+      "command": "yarn",
+      "args": ["install"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "update",
+      "type": "shell",
+      "command": "yarn",
+      "args": ["upgrade"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "test",
+      "type": "shell",
+      "command": "yarn",
+      "args": ["test"],
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "yarn",
+      "args": ["build"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "watch",
+      "type": "shell",
+      "command": "yarn",
+      "args": ["watch"],
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}

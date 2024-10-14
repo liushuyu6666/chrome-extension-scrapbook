@@ -1,0 +1,41 @@
+{
+  "name": "chrome-extension-chatgpt-scrapbook",
+  "version": "1.0.0",
+  "description": " a Chrome Extension that enables users to highlight and organize key insights from their ChatGPT conversations into a structured scrapbook",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --config webpack/webpack.dev.js --watch",
+    "build": "webpack --config webpack/webpack.prod.js",
+    "clean": "rimraf dist",
+    "test": "npx jest",
+    "prettier": "prettier --write \"src/**/*.{ts,tsx}\""
+  },
+  "author": "shuyu liu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liushuyu6666/chrome-extension-scrapbook"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.158",
+    "@types/jest": "^29.5.0",
+    "@types/react": "^18.0.29",
+    "@types/react-dom": "^18.0.11",
+    "copy-webpack-plugin": "^12.0.2",
+    "glob": "^7.1.6",
+    "jest": "^29.5.0",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2 ",
+    "ts-jest": "^29.1.0",
+    "ts-loader": "^8.0.0",
+    "typescript": "^5.0.4",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^4.0.0",
+    "webpack-merge": "^5.0.0",
+    "zip-webpack-plugin": "^4.0.1"
+  }
+}
