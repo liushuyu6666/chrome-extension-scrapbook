@@ -1,46 +1,29 @@
 {
-    "manifest_version": 3,
-    "name": "ChatGPT Scrapbook",
-    "description": "Mark insights from ChatGPT chats and create a well-organized scrapbook.",
-    "version": "1.0",
-    "options_ui": {
-      "page": "options.html"
-    },
-    "icons": {
-      "16": "icons/icon16.png",
-      "32": "icons/icon32.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
-    },
-    "action": {
-      "default_popup": "popup/popup.html",
-      "default_icon": {
-        "16": "icons/icon16.png",
-        "32": "icons/icon32.png",
-        "48": "icons/icon48.png",
-        "128": "icons/icon128.png"
-      }
-    },
-    "content_scripts": [
-      {
-        "matches": [
-          "https://chat.openai.com/*",
-          "https://chatgpt.com/c/*"
-        ],
-        "js": ["text_chunk/text_chunk.js"],
-        "css": ["text_chunk/text_chunk.css"]
-      }
-    ],
-    "background": {
-      "service_worker": "background/background.js"
-    },
-    "permissions": [
-      "storage",
-      "activeTab",
-      "scripting"
-    ],
-    "host_permissions": [
-      "<all_urls>"
-    ]
-  }
-  
+	"manifest_version": 3,
+	"name": "ChatGPT Scrapbook",
+	"description": "Mark insights from ChatGPT chats and create a well-organized scrapbook.",
+	"version": "1.0",
+	"icons": {
+		"16": "icons/icon16.png",
+		"32": "icons/icon32.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	},
+	"action": {
+		"default_icon": {
+			"16": "icons/icon16.png",
+			"32": "icons/icon32.png",
+			"48": "icons/icon48.png",
+			"128": "icons/icon128.png"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://chat.openai.com/*", "https://chatgpt.com/c/*"],
+			"js": ["text_chunk/text_chunk.js"],
+			"css": ["text_chunk/text_chunk.css"]
+		}
+	],
+	"permissions": ["storage", "activeTab", "scripting"],
+	"host_permissions": ["<all_urls>"]
+}
