@@ -1,14 +1,5 @@
 // TODO: MOVE TO THE CREDENTIALS
-const NESTED_CHUNK_TAGS: string[] = [
-	"h1",
-	"h2",
-	"h3",
-	"h4",
-	"p",
-	"ol",
-	"pre",
-	"li",
-];
+const NESTED_CHUNK_TAGS: string[] = ["h1", "h2", "h3", "h4", "p", "pre", "li"];
 
 const ROOT_CHUNK_SELECTOR = `div[data-message-author-role="assistant"] > :nth-child(1) > :nth-child(1)`;
 const getSpecificRootChunkSelector = (dataMessageId: string) =>
